@@ -1,0 +1,853 @@
+/*variáveis para tornar mais eficiente o processo de
+manutenção do site do site*/
+:root{
+	/*configuração das cores do site*/
+	--cor1:#5b90b0;
+	--corBackgroundDecoration1: #34739A;
+	--corBackgroundDecoration2: #487690;
+	--corBackgroundSectionLight: #e8fcf9;
+	--corBackgroundCtaDark: #386174;
+	--corBackgroundCtaLight: #ABEDE6;
+	--outCircleBgColor: #ECFEFF;
+	--inCircleBgColor: #FFF18B;
+	--corFonte1: #1A4661;
+	--corTextoPadrãoClaro: #F6FCFB;
+	--corTextoCtaBotãoClaro: #2E625D;
+	--corFonte5: #F0F9FF;
+	--corFonte6:#C3E0F2;
+	--corTextoPadrão: #13364B;
+
+	/*configuração das fontes do site*/
+	--fontePadrão1: "Poltawski Nowy";
+	--fontePadrão2:"Viga";
+	--fontePadrão3: 'Inter','sans-serif','Arial';
+	--fontePadrão4: 'Roboto';
+
+}
+
+*{
+	
+	padding:0;
+	margin:0;
+
+}
+body{
+	
+	color: var(--corTextoPadrão);
+	font-family:var(--fontePadrão3);
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+/*Estilo do header da página*/
+header{
+	position:absolute;
+	
+	font-size: 0.94rem;
+	font-weight: bold;
+	padding:0;
+	height: 9vh;
+	width: 100%;
+	display:flex;
+	align-items: center;
+	justify-content:space-between;
+}
+nav{
+	
+	height: 100%;
+	width: 84vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	margin-left:7.5vw;
+	
+	
+}
+nav ul{
+	
+
+	height:100%;
+	width:30.5vw;
+	
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.circle{
+	border-radius:20px;
+	cursor:pointer;
+
+}
+.out{
+	width:3.4vw;
+	height:2.5vh;
+	background-color:var(--outCircleBgColor);
+	margin-right:2.1vw;
+	box-shadow:inset 0 2px 2px rgba(0,0,0, .25);
+	display:flex;
+	justify-content:flex-end;
+}
+.in{
+	width:1.4vw;
+	height:2.5vh;
+	background-color:var(--inCircleBgColor);
+	box-shadow: 0 2px 2px rgba(0,0,0, .25);
+}
+/*fim do estilo do header da página*/
+
+
+ul.menu-Itens li{
+	font-family:var(--fontePadrão3);
+	font-weight: bold;
+	
+	font-size:.94rem;
+}
+
+
+/*estilos de aplicação geral*/
+ul{
+	list-style: none;
+	
+
+}
+.dropShadow{
+	box-shadow: 0px 4px 4px rgba(0,0,0, 25%);
+}
+a ,a:visited{
+	text-decoration: none;
+	color: var(--corTextoPadrão);
+}
+a:hover{
+	color:var(--corTextoPadrãoClaro)
+}
+.CTA{
+	
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	border-radius: 6px;
+	cursor:pointer;
+	
+	
+	
+	
+
+}
+div.dark{
+	width:18.3vw;
+	height: 5.8vh;
+	font-size:1.27em;
+	background-color: var(--corBackgroundCtaDark);
+	border:3px solid #ffffff;
+	color: var(--corTextoPadrãoClaro);
+	box-shadow: 0px 4px 4px rgba(0,0,0, 45%);
+}
+div.light{
+	width:12vw;
+	height:3.5vh;
+	background-color: var(--corBackgroundCtaLight);
+	border:3px solid #f0f8ff;
+	box-shadow: 0px 4px 4px rgba(0,0,0, 33%);
+	
+}
+.conteiner{
+	height: 100vh;
+	width:85%;
+	/*border:1px solid black;*/
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+}
+.backgroundCorEscura{
+	background-color: var(--cor1);
+}
+.backgroundCorClara{
+	background-color: var(--corBackgroundSectionLight);
+}
+.EstiloTituloSessão{
+	font-size: 4em;
+	color:var(--cor1);
+	font-family: var(--fontePadrão2);
+	font-weight: 400;
+}
+.EstiloTituloSessãoSpan{
+	font-family:var(--fontePadrão1);
+	font-weight:bold;
+	color:var(--corTextoPadrão);
+	
+}
+.estiloSliders{
+	width:912px;
+	height:372px;
+	padding:10px;
+	
+	background-color:var(--corBackgroundDecoration1);
+	margin-top: 4%;
+	margin-left: 54px;
+
+	display:flex;
+}
+/*fim dos estilos gerais*/
+
+
+/*Hero Session*/
+
+.Principal video{
+	
+	width:100%;
+	height: 91%;
+	margin-top:9vh;
+	
+
+	
+	
+	/*border: 1px solid black;*/
+}
+.Principal div{
+	position:absolute;
+}
+.Principal div.CTA{
+	align-self: flex-end;
+	margin-bottom: 30vh;
+}
+/*Fim do estilo do Hero session*/
+
+/* Quem somos Session*/
+section.QuemSomos{
+
+	/*border:1px solid black;*/
+	background-image: url(../imgs/background\ QuemSomo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+section.QuemSomos div.titleDecoration{
+	width:4.1vw;
+	height:6.8vh;
+	
+	
+	background-color: var(--corBackgroundDecoration1);
+	border-radius:15%;
+	position:absolute;
+	margin-left:-28vh;
+}
+section.QuemSomos h1.titulo-QuemSomos{
+	
+	
+	color: var(--corTextoPadrão);
+	text-align: center;
+	
+	width:100%;
+	height:17.2vh;
+	margin-top:2.2vh;
+	z-index: +1;
+	
+}
+section.QuemSomos h1 span{
+	color:var(--corTextoPadrãoClaro);
+}
+section.QuemSomos p{
+	width:30.3vw;
+	
+	font-family: var(--fontePadrão1);
+	
+	font-size:1.57em;
+	
+
+}
+section.conteudo{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top:4.2vh;
+	width:100%;
+	height:62%;
+	
+
+	
+}
+section.conteudo section{
+	display:flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+	
+}
+section.conteudo section.elementsLeft{
+	width:36vw;
+	height:55vh;
+	margin-top: 1.6vh;
+}
+section.conteudo section.elementsRight{
+	text-align: right;
+	width:38vw;
+	height: 40vh;
+	margin-top: 9vh;
+	
+
+}
+.Conteiner-Texto{
+	
+	padding:1.16vh;
+	backdrop-filter:blur(4px);
+	background-color:rgba(190,202,245, 20%);
+	border-radius:10px;
+}
+div.Conteiner-borda{
+
+	width:100%;
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23333' stroke-width='3' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 1.2vh;
+	margin-top:-2.2vh;
+	position:absolute;
+
+}
+div.center{
+	width:38vw;
+	height:7vh;
+	padding:1.6vh;
+	text-align: center;
+	
+	
+	
+}	
+div.center p{
+		width:100%;
+}
+section.elementsLeft div.Conteiner-borda{
+	
+	height:10.1vh;
+	margin-left:-0.58vh;
+	
+	
+	
+	
+}
+section.elementsRight div.Conteiner-borda{
+	height: 12.6vh;
+	
+	
+}
+div.texto3 div.Conteiner-borda{
+	height:12.9vh;
+
+}
+div.center div.Conteiner-borda{
+	
+	height:9.2vh;
+	
+	
+}
+
+/*Fim do estilo do Quem somos*/
+
+/*O Que fazemos*/
+
+
+section.OqueFazemos h1{
+
+	
+	margin-bottom: 6.6vh;
+}
+section.OqueFazemos section.instalação{
+	margin-top: 7.6vh;
+	
+	
+}
+
+section.OqueFazemos section.venda{
+	
+	width:27vw;
+	
+
+
+	
+}
+
+
+section.OqueFazemos div.cardsConteiner{
+	height:80.9%;
+	width:100%;
+	align-self: flex-end;
+	display:flex;
+	justify-content: space-around;
+	/*border:1px solid black;*/
+}
+
+/*estilo geral que se aplica a todos os cards desta sessão*/
+section.OqueFazemos .Card{
+	
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*border:1px solid black;*/
+	width: 22.1vw;
+	height: 58.1vh;
+	margin-top:15px;
+	margin-top:2vh;
+	
+}
+section.OqueFazemos div.Card-Decoration{
+	
+	width: 5.2vw;
+	height: 9.2vh; 
+	background-color: var(--corBackgroundDecoration2);
+	/*border:1px solid black;*/
+	position:absolute;
+	border-radius:1.2vh;
+	
+	margin-top: -5.2vh;
+	margin-left: -26.7vh;
+	
+	
+}
+section.Card div.cardBgColor{
+	background-color: #98BCD2;
+	
+	width:369px;
+	height: 333px;
+	border-radius:12px;
+	padding:35px;
+	margin-top: 100px;
+}
+/*titulo do card*/
+section.Card h3{
+	align-self: flex-start;
+	
+	position:absolute;
+	color:var(--corFonte5);
+	width: 260px;
+	font-weight: bold;
+	font-size: 30px;
+}
+section.Card p{
+	font-family: var(--fontePadrão1);
+	font-size: 1.2rem;
+	font-weight: 'regular';
+	justify-self: center;
+	align-self: flex-start;
+	
+	height:215px;
+	/*border: 1px solid rgb(40, 20, 221);*/
+	width:auto;
+	
+	
+	
+}
+section.Card strong{
+	font-size: 1.2rem;
+	font-weight: 400;
+	
+	color:var(--corFonte5);
+}
+/*decorador que fica atrás do titulo do card*/
+
+
+
+section.venda p{
+	width:398px;
+	
+}
+section.venda div.cardVenda{
+	width:468px;
+	
+	background-image: url('../imgs/icones/venda\ de\ ar\ icone.png');
+	background-repeat:no-repeat;
+	background-position: right 5% bottom 10%; 
+}
+section.instalação div.cardInstalacao{
+	background-image: url('../imgs/icones/instalação\ icone.png');
+	background-repeat:no-repeat;
+	background-position: right 5% bottom 10%; 
+
+}
+section.manutenção div.cardManutencao{
+	background-image: url('../imgs/icones/manutenção\ ar.png');
+	background-repeat:no-repeat;
+	background-position: right 5% bottom 10%; 
+}
+
+
+
+section.OqueFazemos div.CTA{
+	position:absolute;
+	align-self: flex-end;
+	margin-bottom:30px; 
+
+}
+
+/*Fim do estilo do O que fazemos*/
+
+
+/*Começo do estilo da Workflow*/
+
+section.Workflow{
+	
+	
+	background-image: url(../imgs/workflow/icone\ linha.png);
+	background-repeat: no-repeat;
+	background-position: bottom 40% right 80%;
+		
+}
+section.Workflow h1{
+	width:100%;
+	height:158px;
+	position:absolute;
+	
+	text-align:center;
+
+}
+
+ul{
+	margin:278px;
+	font-family:var(--fontePadrão1);
+	font-size: 25px;
+	font-weight: 400;
+}
+
+li.step1 {
+	width:422px;
+	height: 66px;
+	
+
+	margin-left:40px;
+}
+li.step1 img{
+	margin-top:-110px;
+}
+li.step2{
+	width:402px;
+	height: 99px;
+	
+	margin-left:1008px;
+	}
+li.step2 img{
+	margin-left:-140px;
+	margin-top: -110px
+}
+li.step3{
+	width:476px;
+	height: 66px;
+	
+	margin-top: 90px;
+
+	margin-left: 20%;
+}
+li.step3 img{
+	margin-top: -190px;
+	margin-left: -100px;
+}
+li.step4{
+	width:667px;
+	height: 99px;
+	
+	margin-top:150px;
+	margin-left:12%;
+}
+li.step4 img{
+	margin-top:-190px;
+	margin-left:-100px;
+}
+section.Workflow img{
+	position:absolute;
+	
+}
+
+/*fim do estido da sessão Workflow*/
+
+/*começo do estilo da sessão Contrataram */
+
+section.ContrataramNossosServiços{
+	
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	height:457px;
+	
+}
+section.ContrataramNossosServiços h1.titulo-CNS{
+		
+	font-family:var(--fontePadrão1);
+	font-weight:bold;
+	display:inline-block;
+	width:350px;
+	height:312px;
+	
+	margin-top: 5%;
+	margin-left:53px;
+	
+	
+	
+}
+
+section.ContrataramNossosServiços ul{
+	
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+	
+
+/*fim  do estilo da sessão CNServiços*/
+
+
+/*começo do estilo da sessão formas de pagamento*/
+section.FormasPagamento{
+	height: 659px;
+	background-image: url(../imgs/icones/icone\ decorativo.png);
+	background-repeat: no-repeat;
+	color: var(--corTextoPadrãoClaro);
+	font-family: var(--fontePadrão1);
+	font-size: 25px;
+	font-weight: 400;
+	flex-wrap: wrap;
+}
+section.FormasPagamento h1{
+	font-family: var(--fontePadrão2);
+	font-size: 2.4em;
+	
+	color: var(--corTextoPadrãoClaro);
+	width: 75%;
+	margin-left:255px;
+	
+	
+	
+
+}
+section.FormasPagamento span{
+	color:var(--corTextoPadrãoClaro)
+
+}
+section.FormasPagamento p{
+	width:581px;
+	height:198px;
+	
+	margin-top: 20px;
+	margin-left: -220px;
+	color:var(--corFonte6);
+
+}
+section.FormasPagamento ul.MetodosDePagamento{
+	display:flex;
+	width:855px;
+	height:147px;
+	margin-top:45px;	
+	justify-content: space-between;
+}
+
+/* Fim da sessão formas de pagamento */
+
+
+
+/*começo da sessão marcas com que trabalhamos*/
+section.MarcasQueTrabalhamos{
+
+	flex-wrap:nowrap;
+	justify-content: space-around;
+	height:457px;
+	
+
+}
+section.MarcasQueTrabalhamos h1{
+	
+	font-family:var(--fontePadrão1);
+	font-weight:bold;
+	display:inline-block;
+	width:350px;
+	height:312px;
+	
+	margin-top: 5%;
+	margin-left:53px;
+
+}
+section.MarcasQueTrabalhamos ul.SlideMarcasQueTrabalhamos{
+
+	margin-top:2.5%;
+	flex-wrap: nowrap;
+	
+
+
+}
+section.MarcasQueTrabalhamos img{
+	
+	width:284px;
+	height:287px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-right:10px;
+}
+
+
+/*Fim da sessão Marcas com que trabalhamos*/
+
+/*começo da sessão FAQs*/
+
+section.FAQ{
+	height:644px;
+	
+	
+
+}
+
+section.FAQ h1{
+	color:var(--corTextoPadrão);
+	font-family: var(--fontePadrão1);
+	font-weight: bold;
+	
+	
+	text-align: center;
+
+
+}
+
+section.FAQ ul.Faqs{
+	margin-top:30px;
+	width:513px;
+	display: flex;
+	justify-content: center;
+	align-content:center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+}
+section.FAQ ul.Faqs li{
+	font-family:var(--fontePadrão3);
+	font-size:15px;
+	font-weight:400;
+	color:#35737E;
+	border: 1px solid #5B7DB0;
+	width:100%;
+	height:27px;
+	padding-left:10px;
+	border-radius:2px;
+	margin-top:2px;
+	cursor:pointer;
+}
+section.FAQ ul.Faqs li::before{
+	content:'';
+	position:absolute;
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #ACB9FD;
+	margin-top:5px;
+	margin-left:490px;
+	cursor:pointer;
+}
+
+
+section.FAQ ul.Faqs li.light{
+	background-color:#F2F9F9;
+}
+section.FAQ ul.Faqs li.dark{
+	background-color:#C3DDEC;
+}
+section.FAQ div.CTA{
+	position:absolute;
+	justify-self: flex-end;
+	align-self: flex-end;
+	margin-bottom: 100px;
+}
+
+
+
+
+/*fim da sessão FAQs*/
+
+/*Começo da sessão Rodapé*/
+
+footer.rodape{
+	justify-content:center;
+	
+	font-family: var(--fontePadrão2);
+	font-size:20px;
+	
+
+}
+footer.rodape img.logo{
+	display:block;
+	position:absolute;
+	
+	
+	margin-left:480px;
+	margin-top: 100px;
+
+}
+footer.rodape section.conteinerRodape{
+	margin-top:80px;
+	display: flex;
+	width:100%;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px;
+	/*border:1px solid transparent;*/
+}
+
+img.space{
+
+	width:29px;
+	height:29px;
+	margin-right:5px;
+}
+
+section.left{
+	display:inline-block;
+	width:350px;
+	
+	height:100px;
+	
+	margin-left:20px;
+	
+	
+}
+aside.right{
+	width:350px;
+	font-size:15px;
+	text-align: right;
+	margin-right:20px;
+}
+section.center{
+	display:flex;
+	height:40px;
+	justify-content: center;
+	
+	
+}
+section.center address{
+
+	
+	display:inline-block;
+	
+}
+section.autorInformation{
+	width:100%;
+	
+	display:flex;
+	justify-content: space-around;
+	border-top:2px solid #1D445D;
+	font-size:15px;
+	font-family: var(--fontePadrão4);
+	text-align: center;
+	margin-top:-145px;
+
+}
+section.autorInformation span{
+	
+	width:500px;
+	
+}
+/*Fim da sessão rodapé*/
+.Mini-map{
+
+	display:none;
+}
+
+
+
+
