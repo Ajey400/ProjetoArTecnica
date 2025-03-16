@@ -164,6 +164,16 @@ div.light{
 	flex-wrap: wrap;
 	
 }
+/*sessões que fogem do height padrão*/
+.sessãoEspecial{
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	align-items: center;
+	height:49.4vh;
+	
+}
+
+
 .backgroundCorEscura{
 	background-color: var(--cor1);
 }
@@ -176,6 +186,16 @@ div.light{
 	font-family: var(--fontePadrão2);
 	font-weight: 400;
 }
+.tituloSessãoEspecial{
+	font-family:var(--fontePadrão1);
+	font-weight:bold;
+	display:inline-flex;
+	flex-direction: column;
+	width:21.2vw; 
+	
+	height:34.6vh;
+	
+}
 .EstiloTituloSessãoSpan{
 	font-family:var(--fontePadrão1);
 	font-weight:bold;
@@ -183,15 +203,17 @@ div.light{
 	
 }
 .estiloSliders{
-	width:912px;
-	height:372px;
-	padding:10px;
 	
+	width:54.2vw;
+	height: 38.3vh; 
+	padding:10px;
+	align-items: center;
 	background-color:var(--corBackgroundDecoration1);
-	margin-top: 4%;
-	margin-left: 54px;
-
 	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+
 }
 /*fim dos estilos gerais*/
 
@@ -347,7 +369,7 @@ div.center div.Conteiner-borda{
 
 /*Fim do estilo do Quem somos*/
 
-/*O Que fazemos*/
+/* começo do estilo da sessão O Que fazemos*/
 
 
 section.OqueFazemos h1{
@@ -389,7 +411,8 @@ section.OqueFazemos .Card{
 	/*border:1px solid black;*/
 	width: 22.1vw;
 	height: 58.1vh;
-	margin-top:15px;
+	
+	margin-top:1.52vh;
 	margin-top:2vh;
 	
 }
@@ -398,7 +421,7 @@ section.OqueFazemos div.Card-Decoration{
 	width: 5.2vw;
 	height: 9.2vh; 
 	background-color: var(--corBackgroundDecoration2);
-	/*border:1px solid black;*/
+	
 	position:absolute;
 	border-radius:1.2vh;
 	
@@ -407,24 +430,26 @@ section.OqueFazemos div.Card-Decoration{
 	
 	
 }
+
 section.Card div.cardBgColor{
 	background-color: #98BCD2;
 	
-	width:369px;
-	height: 333px;
+	
+	width:36.7vw;
+
+	height: 35.5vh;
 	border-radius:12px;
-	padding:35px;
-	margin-top: 100px;
+	padding:10%;
+	margin-top: 11.6vh;
 }
 /*titulo do card*/
 section.Card h3{
 	align-self: flex-start;
-	
 	position:absolute;
 	color:var(--corFonte5);
-	width: 260px;
-	font-weight: bold;
-	font-size: 30px;
+	width: 15vw;
+	font-weight: bold;	
+	font-size:1.87em;
 }
 section.Card p{
 	font-family: var(--fontePadrão1);
@@ -433,7 +458,9 @@ section.Card p{
 	justify-self: center;
 	align-self: flex-start;
 	
-	height:215px;
+	
+	height: 23.5vh;
+	
 	/*border: 1px solid rgb(40, 20, 221);*/
 	width:auto;
 	
@@ -451,11 +478,11 @@ section.Card strong{
 
 
 section.venda p{
-	width:398px;
-	
+	width:23vw;	
 }
+
 section.venda div.cardVenda{
-	width:468px;
+	
 	
 	background-image: url('../imgs/icones/venda\ de\ ar\ icone.png');
 	background-repeat:no-repeat;
@@ -478,7 +505,7 @@ section.manutenção div.cardManutencao{
 section.OqueFazemos div.CTA{
 	position:absolute;
 	align-self: flex-end;
-	margin-bottom:30px; 
+	margin-bottom: 3.2vh;
 
 }
 
@@ -488,198 +515,182 @@ section.OqueFazemos div.CTA{
 /*Começo do estilo da Workflow*/
 
 section.Workflow{
-	
-	
 	background-image: url(../imgs/workflow/icone\ linha.png);
 	background-repeat: no-repeat;
 	background-position: bottom 40% right 80%;
+	flex-direction: column;
+	
 		
 }
 section.Workflow h1{
-	width:100%;
-	height:158px;
-	position:absolute;
+	height:26.6vh;
 	
 	text-align:center;
+}
+section.Workflow div.conteinerSteps{	
+	
+	width:95%;
+	height:65vh;
+	margin:auto;
 
 }
-
-ul{
-	margin:278px;
+section.Workflow ul{
+	display:flex;
+	flex-direction: column;
+	
+	align-items: center;
+	justify-content:space-between;
 	font-family:var(--fontePadrão1);
-	font-size: 25px;
+	font-size:1.56em;
+	
 	font-weight: 400;
+	width:100%;
+	height:100%;
 }
 
 li.step1 {
-	width:422px;
-	height: 66px;
+	display:inline-flex;
+	align-self: flex-start;
+	width:29.3vw;
+	height: 100px;
+	height: 10vh;
 	
-
-	margin-left:40px;
+}
+li.step1 span{
+	
+	width:29.3vw;
+	
+	
 }
 li.step1 img{
-	margin-top:-110px;
+	
+	width:5.5vw;
+	height:12.7vh;
+	margin-top:-9.6vh;
+	margin-left: -0.4vw;
 }
 li.step2{
 	width:402px;
-	height: 99px;
+	width:24.3vw;
+	height: 10vh;
+	align-self: flex-end;
 	
-	margin-left:1008px;
 	}
 li.step2 img{
+	
 	margin-left:-140px;
-	margin-top: -110px
+	margin-left:-8.2vw;
+	margin-top: -110px;
+	margin-top:-11.6vh;
 }
 li.step3{
-	width:476px;
-	height: 66px;
 	
-	margin-top: 90px;
-
-	margin-left: 20%;
+	height:30vh;
+	
+	
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	
+	margin-left:-7.2vw;
+}
+li.step3 span.step3texto{
+	display:inline-block;
+	
+	width:25.3vw;
+	height: 66px;
+	height: 6.6vh;
+	
+	
 }
 li.step3 img{
-	margin-top: -190px;
-	margin-left: -100px;
+	margin-top:-9vh;
+	width:11vw;
+	height:15vh;
+	margin-left:-1.3vw;
 }
 li.step4{
-	width:667px;
-	height: 99px;
+	display:inline-flex;
 	
-	margin-top:150px;
-	margin-left:12%;
+	width:50.3vw;
+	
+	height:30.9vh;
+	align-self: flex-start;
+	
+	
+}
+li.step4 span.step4texto{
+	display:inline-block;
+	margin-left:8vw;
+	margin-top:3.2vh;
+	width:40.6vw;
+	height:99px;
+	height:9.9vh;
+	
 }
 li.step4 img{
-	margin-top:-190px;
-	margin-left:-100px;
-}
-section.Workflow img{
 	position:absolute;
-	
+	margin-top:-13vh;
 }
+
 
 /*fim do estido da sessão Workflow*/
-
-/*começo do estilo da sessão Contrataram */
-
-section.ContrataramNossosServiços{
-	
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	height:457px;
-	
-}
-section.ContrataramNossosServiços h1.titulo-CNS{
-		
-	font-family:var(--fontePadrão1);
-	font-weight:bold;
-	display:inline-block;
-	width:350px;
-	height:312px;
-	
-	margin-top: 5%;
-	margin-left:53px;
-	
-	
-	
-}
-
-section.ContrataramNossosServiços ul{
-	
-	flex-wrap: wrap;
-	justify-content: space-around;
-
-}
-	
-
-/*fim  do estilo da sessão CNServiços*/
-
-
 /*começo do estilo da sessão formas de pagamento*/
 section.FormasPagamento{
-	height: 659px;
+	flex-direction:column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: center;
+	height:71.4vh;
 	background-image: url(../imgs/icones/icone\ decorativo.png);
 	background-repeat: no-repeat;
 	color: var(--corTextoPadrãoClaro);
 	font-family: var(--fontePadrão1);
-	font-size: 25px;
-	font-weight: 400;
-	flex-wrap: wrap;
+	font-size: 1.55em;
+	
+	
+	
+}
+section.FormasPagamento div{
+	
+	width:58%;
+
 }
 section.FormasPagamento h1{
 	font-family: var(--fontePadrão2);
 	font-size: 2.4em;
-	
 	color: var(--corTextoPadrãoClaro);
-	width: 75%;
-	margin-left:255px;
-	
-	
-	
-
 }
 section.FormasPagamento span{
 	color:var(--corTextoPadrãoClaro)
 
 }
 section.FormasPagamento p{
-	width:581px;
-	height:198px;
 	
-	margin-top: 20px;
-	margin-left: -220px;
+	width:35vw;
 	color:var(--corFonte6);
 
 }
 section.FormasPagamento ul.MetodosDePagamento{
 	display:flex;
-	width:855px;
-	height:147px;
-	margin-top:45px;	
+	
+	align-items: center;
+	width:51.2vw;
+	height:35%;	
 	justify-content: space-between;
+	
 }
+
 
 /* Fim da sessão formas de pagamento */
 
 
 
 /*começo da sessão marcas com que trabalhamos*/
-section.MarcasQueTrabalhamos{
-
-	flex-wrap:nowrap;
-	justify-content: space-around;
-	height:457px;
-	
-
-}
-section.MarcasQueTrabalhamos h1{
-	
-	font-family:var(--fontePadrão1);
-	font-weight:bold;
-	display:inline-block;
-	width:350px;
-	height:312px;
-	
-	margin-top: 5%;
-	margin-left:53px;
-
-}
-section.MarcasQueTrabalhamos ul.SlideMarcasQueTrabalhamos{
-
-	margin-top:2.5%;
-	flex-wrap: nowrap;
-	
-
-
-}
 section.MarcasQueTrabalhamos img{
+	width:16.9vw;
+	height:31.3vh;
 	
-	width:284px;
-	height:287px;
-	margin-left: 10px;
-	margin-top: 15px;
-	margin-right:10px;
 }
 
 
@@ -688,26 +699,28 @@ section.MarcasQueTrabalhamos img{
 /*começo da sessão FAQs*/
 
 section.FAQ{
-	height:644px;
+	height: 69.8vh;
+	flex-direction: column;	
+	justify-content:space-evenly;
+	align-items: center;
 	
-	
-
 }
 
 section.FAQ h1{
+
 	color:var(--corTextoPadrão);
 	font-family: var(--fontePadrão1);
 	font-weight: bold;
-	
-	
 	text-align: center;
+	
+	
+	
 
 
 }
 
 section.FAQ ul.Faqs{
-	margin-top:30px;
-	width:513px;
+	width:30.6vw;
 	display: flex;
 	justify-content: center;
 	align-content:center;
@@ -717,15 +730,17 @@ section.FAQ ul.Faqs{
 }
 section.FAQ ul.Faqs li{
 	font-family:var(--fontePadrão3);
-	font-size:15px;
+	font-size:0.93em;
 	font-weight:400;
 	color:#35737E;
 	border: 1px solid #5B7DB0;
 	width:100%;
-	height:27px;
+	height:2.9vh;
 	padding-left:10px;
-	border-radius:2px;
-	margin-top:2px;
+	padding-left:0.78vw;
+	border-radius:0.2vh;
+	
+	margin-top:0.2vh;
 	cursor:pointer;
 }
 section.FAQ ul.Faqs li::before{
@@ -736,8 +751,10 @@ section.FAQ ul.Faqs li::before{
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	border-top: 8px solid #ACB9FD;
-	margin-top:5px;
-	margin-left:490px;
+	margin-top:.92vh;
+	margin-left:28.96vw;
+	
+
 	cursor:pointer;
 }
 
@@ -749,10 +766,10 @@ section.FAQ ul.Faqs li.dark{
 	background-color:#C3DDEC;
 }
 section.FAQ div.CTA{
-	position:absolute;
-	justify-self: flex-end;
-	align-self: flex-end;
-	margin-bottom: 100px;
+	
+	
+	align-self: center;
+	
 }
 
 
@@ -763,29 +780,36 @@ section.FAQ div.CTA{
 /*Começo da sessão Rodapé*/
 
 footer.rodape{
-	justify-content:center;
-	
 	font-family: var(--fontePadrão2);
-	font-size:20px;
+	
+	font-size:1.25em;
+	flex-direction: column;
+	justify-content: flex-start;
 	
 
 }
-footer.rodape img.logo{
-	display:block;
-	position:absolute;
+footer.rodape div.logo-conteiner{
+	display:flex;
+	justify-content: flex-end;
+	margin-top:10vh;
+	width:100%;
+	height:16vh;
 	
-	
-	margin-left:480px;
-	margin-top: 100px;
+
+}
+div.logo-conteiner img{
+	margin-right:2.2vw;
 
 }
 footer.rodape section.conteinerRodape{
-	margin-top:80px;
+	
 	display: flex;
 	width:100%;
 	justify-content: space-between;
 	align-items: center;
-	padding:10px;
+	
+	flex-basis:30vh;
+	margin-top:10vh;
 	/*border:1px solid transparent;*/
 }
 
@@ -798,50 +822,37 @@ img.space{
 
 section.left{
 	display:inline-block;
-	width:350px;
-	
-	height:100px;
-	
-	margin-left:20px;
+	margin-left:1.8vw;
 	
 	
 }
 aside.right{
-	width:350px;
 	font-size:15px;
+	font-size:0.80em;
 	text-align: right;
-	margin-right:20px;
+	
+	margin-right: 1.8vw;
 }
 section.center{
 	display:flex;
-	height:40px;
+	font-size: 0.85em;
 	justify-content: center;
 	
 	
 }
-section.center address{
-
-	
+section.center address{	
 	display:inline-block;
-	
-}
+	}
 section.autorInformation{
 	width:100%;
-	
 	display:flex;
 	justify-content: space-around;
 	border-top:2px solid #1D445D;
 	font-size:15px;
 	font-family: var(--fontePadrão4);
 	text-align: center;
-	margin-top:-145px;
+}
 
-}
-section.autorInformation span{
-	
-	width:500px;
-	
-}
 /*Fim da sessão rodapé*/
 .Mini-map{
 
